@@ -14,7 +14,7 @@ contract PanditBlock {
     address[] public holderToken;
 
     // events
-    event Transfer(address indexed _from, address indexed _to_, uint256 _value);
+    event Transfer(address indexed _from, address indexed _to, uint256 _value);
 
     event Approval(
         address indexed _owner,
@@ -49,7 +49,7 @@ contract PanditBlock {
         _userId++;
     }
 
-// Transfer func
+    // Transfer func
     function transfer(
         address _to,
         uint256 _value
@@ -73,5 +73,43 @@ contract PanditBlock {
         emit Transfer(msg.sender, _to, _value);
 
         return true;
+    }
+
+    // Transfer from fun
+
+    function transferFrom(
+        address _from,
+        address _to,
+        uint256 _value
+    ) public returns (bool success) {
+        require(_value <= balanceOf[_from]);
+        require(_value <= allowance[_from][msg.sender]);
+
+        balanceOf[_from] -= _value;
+        balanceOf[_to] += _value;
+
+        allowance[_from][msg.sender] -= _value;
+
+        emit Transfer(_from, _to, _value);
+
+        return true;
+    }
+
+    // Get Token Holder
+
+    function getTokenHolderData(
+        address _address
+    ) public view returns (uint256, address, address, uint256, bool) {
+        return (
+            tokenHolderInfos[_address]._tokenId,
+            tokenHolderInfos[_address]._to,
+            tokenHolderInfos[_address]._from,
+            tokenHolderInfos[_address]._totalToken,
+            tokenHolderInfos[_address]._tokenHolder
+        );
+    }
+
+    function getTokenHolder() public view returns (address[] memory) {
+        return holderToken;
     }
 }
