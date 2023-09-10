@@ -6,7 +6,7 @@ import {
   checkIfWalletIsConnected,
   connectWallet,
   connectingTOKENCONTRACT,
-  connectingTOKENCONTRACT2,
+  connectingTOKEN_SELL_CONTRACT,
   getBalance,
 } from "../Utils/index";
 
