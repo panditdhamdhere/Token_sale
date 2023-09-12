@@ -50,7 +50,7 @@ export const StateContextProvider = ({ children }) => {
       const tokenStanderd = await TOKEN_CONTRACT.standerd();
       const tokenHolders = await TOKEN_CONTRACT._userId();
       const tokenOwnerOfContract = await TOKEN_CONTRACT.ownerOfContract();
-      const tokenAddress = await TOKEN_CONTRACT.address;
+      const tokenAddress = await TOKEN_CONTRACT.address();
 
       const nativeToken = {
         tokenAddress: tokenAddress,
@@ -162,7 +162,6 @@ export const StateContextProvider = ({ children }) => {
         connectWallet,
         setAddress,
         TOKEN_ICO,
-
         currentHolder,
         tokenSale,
         tokenHolders,

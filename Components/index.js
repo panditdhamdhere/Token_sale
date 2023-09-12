@@ -4,7 +4,7 @@ import Banner from "./Banner";
 import Blog from "./Blog";
 import Client from "./Client";
 import Contact from "./Contact";
-import Distribution from "./Distributation";
+import Distribution from "./Distribution";
 import Faq from "./Faq";
 import Footer from "./Footer";
 import Header from "./Header";
@@ -28,8 +28,8 @@ export {
   Header,
   Loader,
   MobileApp,
-  Service,
   Team,
   Timeline,
   Tokensale,
+  Service,
 };
