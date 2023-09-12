@@ -42,7 +42,7 @@ export const connectWallet = async () => {
 const fetchTokenContract = (signerOrProvider) =>
   new ethers.Contract(TOKEN_ADDRESS, TOKEN_ABI, signerOrProvider);
 
-export const connectingTOKENCONTRACT = async () => {
+export const connectingTOKEN_CONTRACT = async () => {
   try {
     const web3modal = new Web3modal();
     const connection = await web3modal.connect();
