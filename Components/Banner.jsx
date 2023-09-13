@@ -102,7 +102,7 @@ const Banner = ({ transerNativeToken }) => {
                   <span>Ripple</span>
                 </li>
               </ul>
-              <div id="whitepaper" className="team_popup mfp-hide" >
+              <div id="whitepaper" className="team_popup mfp-hide">
                 <div className="row m-0">
                   <div className="col-md-7 ">
                     <div className="pt-3 pb-3">
@@ -110,7 +110,7 @@ const Banner = ({ transerNativeToken }) => {
                         <h4> Download Whitepaper</h4>
                         <p>
                           Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Sit et cumque,{" "}
+                          elit. Sit et cumquesdj,hsck shas bbsakljhnlfaaj,hcasfm, ajbsjkasfm bsadfj,jfajsm nsadlfj sajl,aamk. fadjhasj,,{" "}
                         </p>
                         <p>
                           Lorem ipsum dolor sit amet consectetur adipisicing
