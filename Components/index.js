@@ -13,7 +13,7 @@ import MobileApp from "./MobileApp";
 import Service from "./Service";
 import Team from "./Team";
 import Timeline from "./Timeline";
-import Tokensale from "./Tokensale";
+import TokenSale from "./TokenSale";
 
 export {
   About,
@@ -30,6 +30,6 @@ export {
   MobileApp,
   Team,
   Timeline,
-  Tokensale,
+  TokenSale,
   Service,
 };

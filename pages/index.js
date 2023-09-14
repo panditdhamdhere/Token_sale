@@ -18,7 +18,7 @@ import {
   MobileApp,
   Team,
   Timeline,
-  Tokensale,
+  TokenSale,
   Service,
 } from "../Components/index";
 
@@ -46,7 +46,7 @@ const index = () => {
       <Banner transferNativeToken={transferNativeToken} />
       <Service />
       <About />
-      <Tokensale buyToken={buyToken} tokenSale={tokenSale} />
+      <TokenSale buyToken={buyToken} tokenSale={tokenSale} />
       <Distribution />
       <MobileApp />
       <Team />
